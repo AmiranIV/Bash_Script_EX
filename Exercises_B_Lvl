@@ -1,0 +1,5 @@
+Exercise 1: User Greeting
+Write a script that asks the user for their name and prints a personalized greeting.
+For example, if the user enters "John," the script should output "Hello, John!"
+
+
