@@ -6,4 +6,10 @@ For example, if the user enters "John," the script should output "Hello, John!"
 Exercise 2: File Information
 Write a script that takes a filename as an argument and displays various information about the file, such as its name, size, and permissions.
 
-E
+Exercise 3: Number Comparison
+Write a script that takes two numbers as input and compares them. 
+The script should print whether the first number is greater than, less than, or equal to the second number.
+
+Exercise 4: File Backup
+Write a script that prompts the user for a file name and creates a backup of that file by appending the current date and time to the backup file name.
+
