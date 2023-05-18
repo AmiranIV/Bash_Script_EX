@@ -15,3 +15,20 @@ Write your directory name you want to analyze: my_directory
 Total number of files: 10
 Total number of directories: 3
 Total size of all files: 1234567 bytes
+
+
+
+
+
+
+Exercise 2: File Encryption
+Write a script that prompts the user for a file name and encrypts the contents of the file using a chosen encryption algorithm 
+and a password provided by the user as inputs as well.
+Use the openssl tool.
+The script should output the encrypted content to a new file.
+(WORK WITH A TXT FILE)
+
+Encryption algorithm i chose: aes-256-cbc
+
+
+
