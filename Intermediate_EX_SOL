@@ -1,3 +1,5 @@
+#####EXE1:
+
 #!/bin/bash
 
 read -p "Write your directory name you want to analyze: " dirname
@@ -22,3 +24,28 @@ done
 echo "Total number of files: $fileCount"
 echo "Total number of directories: $directoryCount"
 echo "Total size of all files: $totalSize bytes"
+
+
+
+
+
+
+####EXE2:
+
+#!/bin/bash
+
+read -p "Type file name you want to encrypt: " filename
+
+if [ -f "$filename" ]; then
+
+   read -p "Choose the type of algorithm you want for the encryption: " algo
+   read -p "Choose password for encryption: " pass
+
+   encryption_file="encrypted_$filename"
+   openssl "$algo" -a -salt -pbkdf2 -in "$filename" -out "$encryption_file" -k "$pass"
+   echo "Encryption completed. Encrypted file: $encryption_file"
+
+else
+   echo "Encryption failed: File Not Found"
+
+fi
