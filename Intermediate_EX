@@ -1,0 +1,17 @@
+Exercise 1: Directory Analysis
+Write a script that takes a directory path as an argument and performs an analysis of the files and subdirectories within it. The script should display the total number of files, the total number of directories, and the total size of all files combined within the specified directory.
+
+Hints:
+Use the read command to prompt the user for a directory path and store it in a variable.
+Use the find command to traverse the directory and find all files and directories within it. You can use options like -type f to find files and -type d to find directories.
+Use a loop to iterate over the files and directories found by the find command.
+Use conditional statements (if statements) to differentiate between files and directories within the loop.
+Use variables to keep track of the total number of files, total number of directories, and the cumulative size of the files.
+
+Expected OUTPUT:(changes according to your directory)
+
+$ ./script.sh
+Write your directory name you want to analyze: my_directory
+Total number of files: 10
+Total number of directories: 3
+Total size of all files: 1234567 bytes
