@@ -1,0 +1,24 @@
+#!/bin/bash
+
+read -p "Write your directory name you want to analyze: " dirname
+pathToFile=$(dirname "$dirname")
+
+fileCount=0
+directoryCount=0
+totalSize=0
+
+for file in "$pathToFile"/*; do
+    if [ -f "$file" ]; then
+        ((fileCount++))
+        fileSize=$(du -b "$file" | awk '{print $1}'
+	((totalSize+=fileSize))
+    elif
+	[-d "$file"]; then
+	  ((directoryCount++))
+fi
+done
+
+
+echo "Total number of files: $fileCount"
+echo "Total number of directories: $directoryCount"
+echo "Total size of all files: $totalSize bytes"
